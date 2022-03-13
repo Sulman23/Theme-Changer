@@ -16,7 +16,9 @@ body.active {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    transition: all 0.2s linear;
 }
 
 body {
@@ -29,12 +31,7 @@ body {
     height: 100vh;   
 }
 
-/* .theme-icon {
-    text-align: right;
-    margin: 10px;
-} */
-
-i#theme-icon {
+div#theme-icon {
     padding: 15px;
     border-radius: 5px;
     margin: 5px 0 15px 5px;
@@ -43,26 +40,21 @@ i#theme-icon {
     background-color: var(--secondry-bg-color);
     color: var(--primary-text-color);
 }
-/* 
-.theme-icon i.fa-solid.fa-sun {
-    background-color: black;
-    color: white;    
-}
-
-.theme-icon i.fa-solid.fa-moon {
-    background-color: var(--secondry-bg-color);
-    color: var(--primary-text-color);    
-} */
 
 div.content {
     padding: 0.5rem;
     /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 div.content p {
+    width: 500px;
+    height: auto;
     padding: 10px;
     background-color: var(--secondry-bg-color);
-   color: var(--secondry-text-color);
+    color: var(--secondry-text-color);
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 3px 20px rgb(95, 95, 95);
