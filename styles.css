@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    background-color: aqua;
+    padding: 1rem;
+    height: 100vh;   
+}
+
+.theme-icon {
+    text-align: right;
+}
+
+.theme-icon i {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.theme-icon i.fa-solid.fa-sun {
+    background-color: black;
+    color: white;    
+}
+
+.theme-icon i.fa-solid.fa-moon {
+    background-color: white;
+    color: black;    
+}
