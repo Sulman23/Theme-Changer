@@ -11,19 +11,21 @@ body {
 }
 
 .container {
-    background-color: aqua;
-    padding: 1rem;
+    /* background-color: aqua; */
+    padding: 0.2rem;
     height: 100vh;   
 }
 
 .theme-icon {
     text-align: right;
+    margin: 10px;
 }
 
 .theme-icon i {
     padding: 15px;
     border-radius: 5px;
     margin: 5px;
+    box-shadow: 0px 3px 10px rgb(168, 168, 168);
     cursor: pointer;
 }
 
@@ -35,4 +37,17 @@ body {
 .theme-icon i.fa-solid.fa-moon {
     background-color: white;
     color: black;    
+}
+
+div.content {
+    padding: 0.5rem;
+    /* background-color: blueviolet; */
+}
+
+div.content p {
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px rgb(155, 155, 155);
 }
