@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+    --primary-bg-color: #eee;
+    --secondry-bg-color: #fff;
+    --primary-text-color: rgb(0, 0, 0);
+    --secondry-text-color: rgb(75, 75, 75);
+}
+
+body.active {
+    --primary-bg-color: #000;
+    --secondry-bg-color: rgb(75, 75, 75);
+    --primary-text-color: #fff;
+    --secondry-text-color: #efefef;
+}
 
 * {
     margin: 0;
@@ -7,7 +20,7 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: var(--primary-bg-color);
 }
 
 .container {
@@ -16,28 +29,30 @@ body {
     height: 100vh;   
 }
 
-.theme-icon {
+/* .theme-icon {
     text-align: right;
     margin: 10px;
-}
+} */
 
-.theme-icon i {
+i#theme-icon {
     padding: 15px;
     border-radius: 5px;
-    margin: 5px;
-    box-shadow: 0px 3px 10px rgb(168, 168, 168);
+    margin: 5px 0 15px 5px;
+    box-shadow: 0px 3px 10px rgb(146, 146, 146);
     cursor: pointer;
+    background-color: var(--secondry-bg-color);
+    color: var(--primary-text-color);
 }
-
+/* 
 .theme-icon i.fa-solid.fa-sun {
     background-color: black;
     color: white;    
 }
 
 .theme-icon i.fa-solid.fa-moon {
-    background-color: white;
-    color: black;    
-}
+    background-color: var(--secondry-bg-color);
+    color: var(--primary-text-color);    
+} */
 
 div.content {
     padding: 0.5rem;
@@ -46,8 +61,9 @@ div.content {
 
 div.content p {
     padding: 10px;
-    background-color: white;
+    background-color: var(--secondry-bg-color);
+   color: var(--secondry-text-color);
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0px 3px 20px rgb(155, 155, 155);
+    box-shadow: 0px 3px 20px rgb(95, 95, 95);
 }
